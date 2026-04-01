@@ -8,6 +8,8 @@
 // g++ start.cpp -o start
 // (-o is used to rename the output executable file)
 
+// g++ start.cpp -o start && start.exe (compile and run in a sinle command)
+
 #include<iostream>
 using namespace std;
 
