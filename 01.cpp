@@ -64,7 +64,7 @@ int main(){
     // 1. double 100.10 -> int (Explicit Conversion because double has 8 bytes of size and int has 4 bytes so compiler cannot convert it, This is narrowing conversion (large → small type). Compiler can do it implicitly, but it may cause data loss. Therefore, explicit casting is used to make the conversion intentional.
     double price = 100.50;
     int newPrice1 = price; // Compiler converted but lose the data
-    int newPrice2 = (int)price; // It is intentional by developer event if data lose
+    int newPrice2 = (int)price; // It is intentional by developer even if data lose
     cout << newPrice1 << " " << newPrice2 << endl;
 
     // --------------------------------------------------------------------------------------
@@ -77,7 +77,7 @@ int main(){
 
     // Operators in C++ LIKE a + b (+ is a operator)
     // 1. Arithimatic (+ - * / %) Use to peform mathimatical calculation
-    // 2. Relational (== < <= > >=) Use to check relation between two object
+    // 2. Relational (== < <= > >= !=) Use to check relation between two object
     // 3. Logical (&&(AND) ||(OR) !(NOT)) Use to check logical operation between two object
 
     // 1. Arithimatic
@@ -95,7 +95,7 @@ int main(){
     cout << (3 > 5) << endl; // false -> 0
     cout << (3 <= 5) << endl; // true -> 1
     cout << (3 == 3) << endl; // true -> 1
-    cout << (3 == 5) << endl; // true -> 0
+    cout << (3 == 5) << endl; // false -> 0
     cout << (3 != 5) << endl; // true -> 1
     cout << (3 != 3) << endl; // true -> 0
 
@@ -110,7 +110,7 @@ int main(){
     
     // - && (AND)
     // Its says when both statements is True so it returns True
-    cout << ((10>=10) || (20>10)) << endl; // True because True/True is True
+    cout << ((10>=10) && (20>10)) << endl; // True because True/True is True
 
     // Table of OR
     // Statement1  | Statement12   | Result
@@ -135,7 +135,7 @@ int main(){
     //      * Decreament -- => a=a-1 , a-=1, a-- (Decreament 1 in value of a)
     //          * Post Decreament: a-- -> Same as above with decrement
     //          * Pre Decreament: --a -> Same as above with decrement
-    // 3. Ternary
+    // 3. Ternary (Its mean 3 operand like a?b:c its a ternary operator)
 
 
     // 2. Uniary: 
@@ -158,6 +158,11 @@ int main(){
     int preValue = 10;
     int preNewValue = --preValue; // first minus value of preValue then assign the updated value into preNewValue
     cout << "Pre Value " << preValue << " Pre New Value " << preValue << endl;
+
+    
+    // 3. Ternary:
+    // Its a short hand of if else statement
+    100 > 50 ? cout << "100 is greater than 50" << endl : cout << "100 is not greater than 50" << endl; // if condition is true so it print first statement else it print second statement
 
 
     return 0;
