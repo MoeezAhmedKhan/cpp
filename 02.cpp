@@ -147,7 +147,7 @@ int main(){
     // 4
     // 5
 
-    // (why? 1+2+3+4+5 = 15 → break)
+    // (why? 1+2+3+4+5 = 15 → break) It is break when sum is 15 because when next iteration will sum up so it will be 21 thats why it break on 15
 
     // Solution:
     int nNumber = 20;
