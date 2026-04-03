@@ -97,7 +97,7 @@ int main(){
     cout << (3 == 3) << endl; // true -> 1
     cout << (3 == 5) << endl; // false -> 0
     cout << (3 != 5) << endl; // true -> 1
-    cout << (3 != 3) << endl; // true -> 0
+    cout << (3 != 3) << endl; // false -> 0
 
     // 3. Logical
     // - ! (Not) -> True <==> False , False <==> True
