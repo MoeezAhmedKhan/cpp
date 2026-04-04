@@ -212,11 +212,115 @@ int main(){
     cout << "Sum without adding divisible by 7 is : " << mySm << endl;
      
 
+    // do while: It run first then check condition on second iteration
 
+    // do{
+    //     cout << "Do While Run"; // It will run One time difinetly even condition is false
+    // }while(false);
+
+    int doI = 1;
+    do{
+        cout << "DoI is " << doI << endl;
+        doI++;
+    }while(doI <= 10);
     
-    
+
+    // Solve More Problems:
+    // Q1. Check if a number is prime or not?
+    // Suppose we are checking a number x if its is prime so it will have only 2 factors. Its mean it will occus only 1 and its number table.
+    // so when can check only those numbers which is required to check like 2 to n-1. If it is exist in this range so it will be non prime.
+
+    int xNumber = 4;
+    bool xCheck = false;
+    for(int i = 2; i <= xNumber - 1; i++){
+        if(xNumber%i == 0){
+            xCheck = true;
+            break;
+        }
+    }
+    cout << xNumber << (xCheck ? " is not prime." : " is prime.") <<  endl; 
+
+    //  Optimized approach:
+    // no need to check till n-1
+
+    // Reason:
+    // factors always come in pairs (a × b = n)
+
+    // example: 36
+    // 2 × 18
+    // 3 × 12
+    // 4 × 9
+    // 6 × 6  ← middle point
+
+    // What is √n (under root n)?
+    // √n means a number which when multiplied by itself gives n
+    // example: √36 = 6  (because 6 × 6 = 36)
+
+    // Why √n is important?
+    // in factor pairs, numbers move towards each other
+    // and meet at √n (middle point)
+
+    // after √n, pairs just repeat in reverse:
+    // 9 × 4
+    // 12 × 3
+    // 18 × 2
+
+    // so after √n, we are not getting anything new
+
+    // Important:
+    // in every pair, one number is small and one is big
+    // the small number is always ≤ √n
+
+    // so if a number has a factor,
+    // at least one factor will be found before or at √n
+
+    // that's why:
+    // we only check till √n
+    // (i * i <= n means same thing as i <= √n)
+
+    // if no divisor found till √n:
+    // then number is definitely prime
+
+    // √n is the middle point of factor pairs
+    // so we only check till √n
+
+    int yNumber = 4;
+    bool yCheck = false;
+
+    for(int i = 2; i * i <= yNumber; i++){
+        if(yNumber % i == 0){
+            yCheck = true; // divisor found
+            break;
+        }
+    }
+
+    cout << yNumber << (yCheck ? " is not prime." : " is prime.") << endl;
 
 
+
+    // -------------------------------------------------------------
+
+    // Introduction of Nested Loops:
+    // Suppose we want pattern like this:
+    // * * * *
+    // * * * *
+    // * * * *
+    // (3 rows and 4 columns) & 1 row is a single line
+
+    for(int i = 1; i <= 3; i++){ // row or single line
+        for(int j = 1; j <= 4; j++){ // col
+            cout << "*";
+        }
+        cout << endl;
+    }
+
+    // Outer loops define how many lines will be in loop
+    // Inner loop define how many pattern build in single line
+
+    // Explanation:
+    // i = 1 → j runs 1 to 4 → ****
+    // i = 2 → j runs 1 to 4 → ****
+    // i = 3 → j runs 1 to 4 → ****
 
 
     return 0;
