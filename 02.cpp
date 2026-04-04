@@ -323,5 +323,23 @@ int main(){
     // i = 3 → j runs 1 to 4 → ****
 
 
+    // One More Problem:
+    // WAP to find factorial of N number?
+    // Factorial of a number means multiplying all positive integers from 1 up to that number.
+
+    // Example:
+    // 5! = 5 × 4 × 3 × 2 × 1 = 120
+
+    // Note:
+    // Factorial of 0 is always 1 (0! = 1)
+
+    int findFactorial = 5;
+    int factResult = 1; /// factResult is initialized with 1, because if we start with 0, result will always be 0, (0 multiplied by anything is always 0)
+    for(int i = findFactorial; i >= 1; i--){
+        factResult*=i;
+    } 
+    cout << findFactorial << " of factorial is " << factResult;
+
+
     return 0;
 }
