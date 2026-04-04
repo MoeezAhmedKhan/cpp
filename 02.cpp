@@ -333,8 +333,8 @@ int main(){
     // Note:
     // Factorial of 0 is always 1 (0! = 1)
 
-    int findFactorial = 5;
-    int factResult = 1; /// factResult is initialized with 1, because if we start with 0, result will always be 0, (0 multiplied by anything is always 0)
+    int findFactorial = 20;
+    long long factResult = 1; /// factResult is initialized with 1, because if we start with 0, result will always be 0, (0 multiplied by anything is always 0)
     for(int i = findFactorial; i >= 1; i--){
         factResult*=i;
     } 
