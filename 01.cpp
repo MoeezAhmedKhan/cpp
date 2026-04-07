@@ -16,7 +16,7 @@ using namespace std; // Its is used for define std through namespace because cou
 // Variables - Containers to store data = grade = 'A' and grade is identifier and 'A' is a synthetic representation and we mention data types with variables.
 // Data Types: int , char , float , bool , double
 // Now Computer follow binary number system because it has signal which is based on 0 and 1 so 0/1 is a binary number.
-// Mean signal digit can be 0 or 1 so signal digit (1) is a bit and 8 bits is 1 byte example: 0 1 1 0 0 1 0 1
+// Mean single digit can be 0 or 1, so single digit (1) is a bit and 8 bits is 1 byte example: 0 1 1 0 0 1 0 1
 
 // Now continue to data types of its sizes
 // int => 4 bytes
@@ -31,7 +31,7 @@ int main(){
     cout << sizeof(age); // sizeof shows the size of its value into bytes
 
     // We know how the number store in menory but what about the character value? before storing characters in memory it find ASCII value of then convert ASCII value into binary and it store in memory.
-    // American Standard Code For Information Interchange its has already decided number of each/every character. Like A = 65, a = 97, so when compiler stores character a so it store its ASCII value in memory.
+    // American Standard Code For Information Interchange its has already decided number of each/every character. Like A = 65, a = 97, so when compiler stores character 'a' so it store its ASCII value in memory.
     char grade = 'A';
     cout << grade << endl;
 
