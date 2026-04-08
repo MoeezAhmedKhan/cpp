@@ -116,6 +116,70 @@ int main(){
         }
         cout << endl;
     }
+    cout << endl;
+
+
+    // 7. WAP with same pattern but with numbers
+    // Example:
+    // 1
+    // 2 2
+    // 3 3 3
+    // 4 4 4 4 
+
+    for(int i = 1; i <= 6; i++){
+        for(int j = 1; j <= i; j++){
+            cout << i;
+        }
+        cout << endl;
+    }
+
+    // 8. WAP with same pattern but with alphabets
+    // Example:
+    // A
+    // B B 
+    // C C C 
+    // D D D D
+
+    char myAlpha = 'A';
+    for(int i = 0; i < 5; i++){
+        for(int j = 0; j < i+1; j++){ // Loop runs i+1 time mean if i 0 so inner loop run i+1
+            cout << myAlpha;
+        }
+        myAlpha++;
+        cout << endl;
+    }
+    cout << endl;
+
+
+    // 9. WAP to print triangle pattern like that:
+    // Example:
+    // 1
+    // 1 2
+    // 1 2 3
+    // 1 2 3 4
+
+    for(int i = 1; i <= 4; i++){
+        for(int j = 1; j <= i; j++){
+            cout << j;
+        }
+        cout << endl;
+    }
+    cout << endl;
+
+
+    // 10. WAP to print same above pattern but in reverse order:
+    // Example:
+    // 1
+    // 2 1
+    // 3 2 1
+    // 4 3 2 1
+
+    for(int i = 1; i <= 4; i++){
+        for(int j = i; j <= i; j++){
+            cout << j;
+        }
+        cout << endl;
+    }
 
 
     
