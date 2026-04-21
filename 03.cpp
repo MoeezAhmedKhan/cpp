@@ -175,11 +175,99 @@ int main(){
     // 4 3 2 1
 
     for(int i = 1; i <= 4; i++){
-        for(int j = i; j <= i; j++){
+        for(int j = i; j >= 1; j--){
             cout << j;
         }
         cout << endl;
     }
+    cout << endl;
+
+
+    // 11. Write a program in C++ to print the following pattern:
+    // Example:
+    //     *
+    //    **
+    //   ***
+    //  ****
+
+    int totalRows = 4;
+    for (int i = 1; i <= totalRows; i++)
+    {  
+        for (int j = totalRows - 1; j >= i ; j--)
+        {
+            cout << " ";
+        }
+        for (int k = 1; k <= i; k++)
+        {
+            cout << "*";
+        }
+        
+        cout << endl; 
+    }
+    
+
+    // Dry Run
+    // i = 1
+    // j = 3 , 3 >= 1 true
+    // print " "
+    // j--   , 2 >= 1 true
+    // print " "
+    // j--   , 1 >= 1 true
+    // print " "
+    // j--   , 0 >= 1 false
+
+    // k = 1 
+    // i = 1 , 1 <= 1 true
+    // print "*"
+    // k++   , 2 <= 1 false
+
+    // ---------------------
+
+    // i = 2
+    // j = 3 , 3 >= 2 true
+    // print " "
+    // j--   , 2 >= 2 true
+    // print " "
+    // j--   , 1 >= 2 false
+
+    // k = 1
+    // i = 2 , 1 <= 2 true
+    // print "*"
+    // k++   , 2 <= 2 true
+    // print "*"
+    // k++   , 3 <= 2 false
+
+    // ---------------------
+
+    // i = 3
+    // j = 3 , 3 >= 3 true
+    // print " "
+    // j--   , 2 >= 3 false
+
+    // k = 1
+    // i = 3 , 1 <= 3 true
+    // print "*"
+    // k++   , 2 <= 3 true
+    // print "*"
+    // k++   , 3 <= 3 true
+    // print "*"
+    // k++   , 4 <= 3 false
+
+    // ---------------------
+
+    // i = 4
+    // j = 3 , 3 >= 4 false   (no space)
+
+    // k = 1
+    // i = 4 , 1 <= 4 true
+    // print "*"
+    // k++   , 2 <= 4 true
+    // print "*"
+    // k++   , 3 <= 4 true
+    // print "*"
+    // k++   , 4 <= 4 true
+    // print "*"
+    // k++   , 5 <= 4 false
 
 
     
