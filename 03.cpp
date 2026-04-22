@@ -204,6 +204,7 @@ int main(){
         
         cout << endl; 
     }
+    cout << endl; 
     
 
     // Dry Run
@@ -268,6 +269,40 @@ int main(){
     // k++   , 4 <= 4 true
     // print "*"
     // k++   , 5 <= 4 false
+
+
+    // 12. WAP to print:
+
+    //      1
+    //     12
+    //    123
+    //   1234
+
+    for(int i = 1; i <= totalRows; i++){
+        for (int j = totalRows - 1; j >= i; j--)
+        {
+            cout << " ";
+        }
+        for (int k = 1; k <= i; k++)
+        {
+            cout << k;
+        }
+        cout << endl;
+        
+    }
+    cout << endl;
+
+
+    // WAP to print:
+
+    // 1
+    // 2 3
+    // 3 4 5
+    // 4 5 6 7
+
+
+
+
 
 
     
