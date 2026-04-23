@@ -100,6 +100,9 @@ int main(){
     cout << endl;
 
 
+
+    // Triangle Patterns
+
     // 6. WAP to print triangle pattern like that:
     // Example:
     // *
@@ -293,12 +296,123 @@ int main(){
     cout << endl;
 
 
-    // WAP to print:
+    // 13. WAP to print:
 
     // 1
     // 2 3
     // 3 4 5
     // 4 5 6 7
+
+    for (int i = 1; i <= totalRows; i++)
+    {
+        int myI = i;
+        for (int j = 1; j <= i; j++)
+        {
+            cout << myI;
+            myI++;
+        }
+        cout << endl;
+        
+    }
+    cout << endl;
+
+
+    // Floyd's Triangle Patterns:
+    // Floyd's Triangle is a right-angled triangular array of natural numbers,
+
+    // 14. WAP to print this Floyd's Pattern
+    // 1
+    // 2 3
+    // 4 5 6
+    // 7 8 9 10 
+
+    int myCount = 1;
+    for (int i = 1; i <= totalRows; i++)
+    {
+        for (int j = 1; j <= i; j++)
+        {
+            cout << myCount;
+            myCount++;
+        }
+        cout << endl;
+        
+    }
+    cout << endl;
+
+
+    // 15. WAP to print this pattern
+    // A 
+    // B C 
+    // D E F 
+    // G H I J
+
+    char myLetter = 'A';
+    for (int i = 1; i <= totalRows; i++)
+    {
+        for (int j = 1; j <= i; j++)
+        {
+            cout << myLetter;
+            myLetter++;
+        }
+        cout << endl;
+        
+    }
+    cout << endl;
+
+    // 16. WAP to print this reverse triangle pattern
+    // A
+    // B A 
+    // C B A 
+    // D C B A
+
+
+    char myLettr = 'A';
+    for (int i = 1; i <= totalRows; i++)
+    {
+        char myTempLettr = myLettr;
+        for (int j = 1; j <= i; j++)
+        {
+            cout << myTempLettr;
+            myTempLettr--;
+        }
+        myLettr++;
+        cout << endl;
+        
+    }
+    cout << endl;
+
+    // Inverted Traingle Pattern
+
+    // 17. WAP to print this pattern
+    // 1 1 1 1
+    //   2 2 2
+    //     3 3
+    //       4
+
+    int myTempNum = totalRows;
+    for(int i = 1; i <= totalRows; i++)
+    {
+        for (int k = 1; k <= i; k++)
+        {
+            cout << " ";
+        } 
+        
+        for (int j = myTempNum; j >= i; j--)
+        {
+            cout << i;
+        }
+     
+        cout << endl;
+        
+    }
+    
+    
+
+
+
+
+    
+    
 
 
 
