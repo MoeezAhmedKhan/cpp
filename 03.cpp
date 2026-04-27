@@ -389,22 +389,48 @@ int main(){
     //     3 3
     //       4
 
-    int myTempNum = totalRows;
-    for(int i = 1; i <= totalRows; i++)
+
+    for (int i = 1; i <= totalRows; i++)
     {
-        for (int k = 1; k <= i; k++)
+        for (int k = 1; k < i; k++)
         {
             cout << " ";
-        } 
-        
-        for (int j = myTempNum; j >= i; j--)
+        }
+
+        for (int j = i; j <= totalRows; j++)
         {
             cout << i;
         }
-     
-        cout << endl;
         
+        cout << endl;
     }
+    cout << endl;
+
+
+    // 18. WAP to print character version for the above program
+    // A A A A 
+    //   B B B 
+    //     C C 
+    //       D 
+
+    char myCharct = 'A';
+    for (int i = 1; i <= totalRows; i++)
+    {
+        for (int k = 1; k < i; k++)
+        {
+            cout << " ";
+        }
+
+        for (int j = i; j <= totalRows; j++)
+        {
+            cout << myCharct;
+
+        }
+        myCharct++;
+        
+        cout << endl;
+    }
+    cout << endl;
     
     
 
